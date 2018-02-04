@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobileattendancecom.mobileattendance" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".guiDecider" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".studentForm"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".studentHome"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".facultyForm"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".facultyHome"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".studentCourse"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".facultyCourse"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".registerAttendance"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".studentList"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".markAttendance"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".attendanceList"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".updateCourse"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".attendedStudents"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".studentAttendvw"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".saveList"
+            android:theme="@style/AppTheme">
+        </activity>
+    </application>
+
+</manifest>

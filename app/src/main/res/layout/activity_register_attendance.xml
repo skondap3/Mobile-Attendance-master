@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detected Devices List: "
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/detDevices"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <ListView
+        android:id="@+id/listViewDetected"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paired Devices List: "
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/pairDevices"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <ListView
+        android:id="@+id/listViewPaired"
+        android:layout_width="match_parent"
+        android:layout_height="215dp">
+
+    </ListView>
+</LinearLayout>

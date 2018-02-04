@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Details "
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:id="@+id/courseForm"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Term : "
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/courseTerm"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/courseForm"
+            android:layout_alignLeft="@+id/courseYear"
+            android:layout_alignStart="@+id/courseYear" />
+        <TextView
+            android:id="@+id/termLov"
+            android:layout_width="25dp"
+            android:layout_height="45dp"
+            android:textSize="15sp"
+            android:layout_alignTop="@+id/courseTerm"
+            android:layout_alignLeft="@+id/courseForm"
+            android:layout_alignStart="@+id/courseForm"
+            android:layout_alignRight="@+id/courseForm"
+            android:layout_alignEnd="@+id/courseForm"
+            android:layout_alignBottom="@+id/courseTerm" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Year : "
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/courseYear"
+            android:layout_marginTop="43dp"
+            android:layout_below="@+id/courseTerm"
+            android:layout_alignLeft="@+id/courseId"
+            android:layout_alignStart="@+id/courseId" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course ID : "
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/courseId"
+            android:layout_marginTop="44dp"
+            android:layout_below="@+id/courseYear"
+            android:layout_alignRight="@+id/startTime"
+            android:layout_alignEnd="@+id/startTime" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etcourseId"
+            android:inputType="text"
+            android:layout_above="@+id/duration"
+            android:layout_alignLeft="@+id/btcreateCourse"
+            android:layout_alignStart="@+id/btcreateCourse"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration : "
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/duration"
+            android:layout_below="@+id/courseId"
+            android:layout_alignLeft="@+id/courseStatus"
+            android:layout_alignStart="@+id/courseStatus"
+            android:layout_marginTop="43dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etduration"
+            android:inputType="text"
+            android:layout_above="@+id/courseStatus"
+            android:layout_alignLeft="@+id/etcourseId"
+            android:layout_alignStart="@+id/etcourseId"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Status : "
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/courseStatus"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/duration"
+            android:layout_toLeftOf="@+id/numberPicker1"
+            android:layout_toStartOf="@+id/numberPicker1" />
+        <Spinner
+            android:id="@+id/statusLov"
+            android:layout_width="25dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_alignTop="@+id/courseStatus"
+            android:layout_alignRight="@+id/etduration"
+            android:layout_alignEnd="@+id/etduration"
+            android:layout_alignLeft="@+id/etcourseId"
+            android:layout_alignStart="@+id/etcourseId" />
+        <TextView
+            android:id="@+id/numberPicker1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/courseYear"
+            android:layout_alignLeft="@+id/termLov"
+            android:layout_alignStart="@+id/termLov"
+            android:layout_alignRight="@+id/termLov"
+            android:layout_alignEnd="@+id/termLov"
+            android:layout_alignTop="@+id/courseYear" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time : "
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/startTime"
+            android:layout_below="@+id/statusLov"
+            android:layout_alignLeft="@+id/courseStatus"
+            android:layout_alignStart="@+id/courseStatus"
+            android:layout_marginTop="31dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etstartTime"
+            android:editable="false"
+            android:hint="Click to Select Start Time"
+            android:layout_alignBottom="@+id/startTime"
+            android:layout_alignLeft="@+id/statusLov"
+            android:layout_alignStart="@+id/statusLov"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time : "
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/endTime"
+            android:layout_marginTop="41dp"
+            android:layout_below="@+id/startTime"
+            android:layout_alignLeft="@+id/startTime"
+            android:layout_alignStart="@+id/startTime" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:id="@+id/etendTime"
+            android:hint="Click to Select End Time"
+            android:layout_alignBottom="@+id/endTime"
+            android:layout_alignLeft="@+id/etstartTime"
+            android:layout_alignStart="@+id/etstartTime"
+            android:layout_alignRight="@+id/etstartTime"
+            android:layout_alignEnd="@+id/etstartTime" />
+        <Button
+            android:id="@+id/btcreateCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="createCourse"
+            android:text="Submit"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>

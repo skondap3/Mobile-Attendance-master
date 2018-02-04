@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faculty Form "
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:id="@+id/facultyForm"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faculty ID : "
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/facultyId"
+            android:layout_below="@+id/facultyForm"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="23dp" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etfacultyId"
+            android:layout_above="@+id/ffirstName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/facultyId"
+            android:layout_toEndOf="@+id/facultyId" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name : "
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/ffirstName"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/facultyId"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etffirstName"
+            android:layout_alignBottom="@+id/ffirstName"
+            android:layout_toRightOf="@+id/ffirstName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name : "
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/flastName"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/ffirstName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etflastName"
+            android:layout_alignBottom="@+id/flastName"
+            android:layout_toRightOf="@+id/flastName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/btcreateFacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="createFaculty"
+            android:text="Submit"
+            android:layout_below="@+id/etflastName"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>
